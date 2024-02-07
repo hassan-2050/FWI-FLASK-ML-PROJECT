@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Algerian Forest Fires Dataset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #007BFF;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .dataset-info {
+            margin: 20px 0;
+        }
+
+        .attribute-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .center-content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Algerian Forest Fires Dataset</h1>
+        <div class="dataset-info">
+            <h2><strong>Data Set Information:</strong></h2>
+            <p>The dataset includes 244 instances that regroup data from two regions of Algeria, namely the Bejaia region located in the northeast of Algeria and the Sidi Bel-abbes region located in the northwest of Algeria.</p>
+            <p>122 instances for each region.</p>
+            <p>The period from June 2012 to September 2012.</p>
+            <p>The dataset includes 11 attributes and 1 output attribute (class).</p>
+            <p>The 244 instances have been classified into fire (138 classes) and not fire (106 classes) classes.</p>
+        </div>
+
+        <div class="dataset-info">
+            <h2><strong>Attribute Information:</strong></h2>
+            <ol class="attribute-list">
+                <li>Date : (DD/MM/YYYY) Day, month ('June' to 'September'), year (2012)</li>
+                <li>Temp : temperature noon (temperature max) in Celsius degrees: 22 to 42</li>
+                <li>RH : Relative Humidity in %: 21 to 90</li>
+                <li>Ws : Wind speed in km/h: 6 to 29</li>
+                <li>Rain: total day in mm: 0 to 16.8</li>
+                <li>Fine Fuel Moisture Code (FFMC) index from the FWI system: 28.6 to 92.5</li>
+                <li>Duff Moisture Code (DMC) index from the FWI system: 1.1 to 65.9</li>
+                <li>Drought Code (DC) index from the FWI system: 7 to 220.4</li>
+                <li>Initial Spread Index (ISI) index from the FWI system: 0 to 18.5</li>
+                <li>Buildup Index (BUI) index from the FWI system: 1.1 to 68</li>
+                <li>Fire Weather Index (FWI) Index: 0 to 31.1</li>
+                <li>Classes: two classes, namely Fire and not Fire</li>
+            </ol>
+        </div>
+
+        <div class="center-content">
+            <p>Lets make predictions <a class="button-link" href="{{ url_for('predict_datapoint') }}">Click here</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
