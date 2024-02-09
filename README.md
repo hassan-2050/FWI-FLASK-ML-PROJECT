@@ -47,4 +47,4 @@ For any inquiries or contributions, please feel free to reach out.
 - Data source: Algerian Forest Fires dataset.
 - Hosting platform: PythonAnywhere.
 
-Thank you for visiting our project!
+Thank you for visiting 
